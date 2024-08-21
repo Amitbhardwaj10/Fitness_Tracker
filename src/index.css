@@ -7,6 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  background-color: rgb(0, 1, 20);
-  background-color: white;
+  scroll-behavior: smooth;
+  transition: all .5s ease;
+  background-color: #000000;
 }
