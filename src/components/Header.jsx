@@ -35,7 +35,7 @@ function Header() {
 	// icon click karne par undefined aa rha he -> shi karna he
 
 	return (
-		<header className="w-full sticky top-0 z-999 border-b-zinc-900 border-b-2 px-16 py-4 mb-5">
+		<header className="w-full sticky top-0 z-999 border-b-zinc-200 dark:border-b-gray-900 border-b-2 px-16 py-4 mb-5">
 			<nav className="w-full flex items-center justify-between">
 				<div className="logo text-teal-500 text-2xl">
 					<Link to="/"> Fitness Tracker</Link>
@@ -44,7 +44,7 @@ function Header() {
 					<div className="dark_mode">
 						<Menu as="div" className="relative inline-block text-left">
 							<div>
-								<MenuButton className="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-neutral-800 ring-inset dark:text-white">
+								<MenuButton className="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset dark:text-white">
 									{mode === "Light" ? (
 										<>
 											{" "}
@@ -71,19 +71,19 @@ function Header() {
 									<MenuItem className="flex gap-4 items-center">
 										<a
 											href="#"
-											className="block px-4 py-3 text-neutral-500 text-sm data-[focus]:bg-slate-500 dark:data-[focus]:bg-slate-950 data-[focus]:text-white"
+											className="block px-4 py-3 text-sm font-semibold text-neutral-500 dark:text-neutral-400 hover:bg-slate-400 hover:text-white dark:hover:bg-gray-950 dark:hover:text-white"
 											onClick={handleClick}
 										>
-											<HiMiniSun className="text-xl" /> <span>Light</span>
+											<HiMiniSun className="text-xl" /> {"Light"}
 										</a>
 									</MenuItem>
 									<MenuItem className="flex gap-4 items-center">
 										<a
 											href="#"
-											className="block px-4 py-3 text-neutral-500 text-sm data-[focus]:bg-slate-500 dark:data-[focus]:bg-slate-950 data-[focus]:text-white"
+											className="block px-4 py-3 text-sm font-semibold text-neutral-500 dark:text-neutral-400 hover:bg-slate-400 hover:text-white dark:hover:bg-gray-950 dark:hover:text-white"
 											onClick={handleClick}
 										>
-											<HiMiniMoon className="text-xl" /> <span>Dark</span>
+											<HiMiniMoon className="text-xl" /> {"Dark"}
 										</a>
 									</MenuItem>
 								</div>
