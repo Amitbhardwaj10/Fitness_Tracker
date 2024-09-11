@@ -1,8 +1,10 @@
-
-
 @font-face {
   font-family: BT Brik Condensed;
-  src: url(https://www.beastpharm.com/cdn/shop/files/BTBrik-Condensed.woff2?v=14362391829307509869) format("woff2"),url(//www.beastpharm.com/cdn/shop/files/BTBrik-Condensed.woff?v=10041580237707934769) format("woff");
+  src:
+    url(https://www.beastpharm.com/cdn/shop/files/BTBrik-Condensed.woff2?v=14362391829307509869)
+      format("woff2"),
+    url(//www.beastpharm.com/cdn/shop/files/BTBrik-Condensed.woff?v=10041580237707934769)
+      format("woff");
 }
 
 .logo a {

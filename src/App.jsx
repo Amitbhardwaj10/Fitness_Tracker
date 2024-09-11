@@ -4,15 +4,15 @@ import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
 
 function App() {
-  return (
-    <>
-      <div className="min-h-screen text-black dark:bg-[#000000] dark:text-white">
-        <Header />
-        <Outlet />
-        <Footer />
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className="min-h-screen text-black dark:bg-[#040715] dark:text-[#94a3b8]">
+				<Header />
+				<Outlet />
+				<Footer />
+			</div>
+		</>
+	);
 }
 
 export default App;
