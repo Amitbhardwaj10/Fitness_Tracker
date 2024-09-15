@@ -5,12 +5,11 @@ import { Tooltip } from "react-tooltip";
 
 function Header() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
+	const root = window.document.documentElement;
 
 	//useEffect for chnaging the mode
 	useEffect(() => {
-		const root = window.document.documentElement;
 		const initialTheme = localStorage.getItem("theme");
-
 		if (initialTheme === "dark") {
 			setIsDarkMode(true);
 			root.classList.add("dark");
@@ -22,7 +21,6 @@ function Header() {
 
 	// Toggle Dark Mode
 	const toggleDarkMode = () => {
-		const root = window.document.documentElement;
 		const newTheme = isDarkMode ? "light" : "dark";
 
 		setIsDarkMode(!isDarkMode);
